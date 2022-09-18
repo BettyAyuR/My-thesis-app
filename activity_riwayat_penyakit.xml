@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiwayatPenyakit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Riwayat Penyakit"
+            android:fontFamily="@font/poppinsbold"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tket"
+            android:text="Keterangan"
+            android:textAlignment="center">
+        </TextView>
+        <EditText
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_width="400dp"
+            android:textSize="18sp"
+            android:id="@+id/namabayi_editText">
+        </EditText>
+
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_width="400dp"
+            android:textSize="18sp"
+            android:id="@+id/hasil_diagnosa_editText">
+        </EditText>
+
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_width="400dp"
+            android:textSize="18sp"
+            android:id="@+id/pengobatan_editText">
+        </EditText>
+
+        <Button
+            android:id="@+id/btnok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
