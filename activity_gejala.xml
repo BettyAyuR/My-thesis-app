@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".gejala">
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/photoo3"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sistem Pakar Penyakit Kulit Dermatitis Pada Bayi"
+        android:gravity="center"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/namabayi_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Nama Bayi"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_width="400px"
+        android:textSize="18sp"
+        android:id="@+id/namabayi_editText">
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/G01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onCheckboxClicked"
+        android:text="Ruam kemerahan di pipi" />
+
+    <CheckBox
+        android:id="@+id/G02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onCheckboxClicked"
+        android:text="Kulit kering di bagian kulit wajah" />
+
+    <CheckBox
+        android:id="@+id/G03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onCheckboxClicked"
+        android:text="Gatal" />
+
+    <CheckBox
+        android:id="@+id/G04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onCheckboxClicked"
+        android:text="Ruam kemerahan muncul selain di pipi, tetapi terdapat pada daerah lipatan kulit, dada dan perut " />
+
+    <CheckBox
+        android:id="@+id/G05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onCheckboxClicked"
+        android:text="Demam" />
+
+    <CheckBox
+        android:id="@+id/G06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onCheckboxClicked"
+        android:text="Bayi tampak rewel" />
+
+    <CheckBox
+        android:id="@+id/G07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onCheckboxClicked"
+        android:text="Terdapat sisik kekuningan di area kulit kepala, alis atau sekitar bulu mata" />
+
+    <CheckBox
+        android:id="@+id/G08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Kulit kepala, alis atau sekitar bulu mata kemerahan diatas sisik kekuningan"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:id="@+id/G09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onCheckboxClicked"
+        android:text="Diare"
+        tools:ignore="OnClick" />
+    <CheckBox
+        android:id="@+id/G10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onCheckboxClicked"
+        android:text="Kulit sangat kering sehingga mengelupas seperti berketombe di kulit kepala"
+        tools:ignore="OnClick" />
+    <CheckBox
+        android:id="@+id/G11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onCheckboxClicked"
+        android:text="Terdapat sisik kekuningan dengan berbagai perluasan pada daerah seluruh tubuh yang mengandung banyak kelenjar keringat"
+        tools:ignore="OnClick" />
+    <CheckBox
+        android:id="@+id/G12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onCheckboxClicked"
+        android:text="Kulit sangat kering bahkan mengelupas meluas bukan hanya di bagian wajah"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btnpenyakit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cek Diagnosa Penyakit"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/h1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Hasil Penyakit"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_width="400px"
+        android:textSize="18sp"
+        android:id="@+id/hasil_diagnosa_editText">
+    </EditText>
+
+    <TextView
+        android:id="@+id/pen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Pengobatan"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_width="400px"
+        android:textSize="18sp"
+        android:id="@+id/pengobatan_editText">
+    </EditText>
+
+    <Button
+        android:id="@+id/btnriwayat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan Riwayat Penyakit"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
+</ScrollView>
